@@ -8,10 +8,12 @@ Here are the steps the project:
 	require("reshape2",character.only = TRUE, quietly = TRUE) 
 	require("knitr",character.only = TRUE, quietly = TRUE)
 	require("markdown",character.only = TRUE, quietly = TRUE)
-##Gobal Variables 
-###YMAT2 <- matrix(seq(1,2),nrow=2)
-###YMAT3 <- matrix(seq(1,3),nrow=3)
-###My Functions 
+
+#Gobal Variables
+YMAT2 <- matrix(seq(1,2),nrow=2)
+YMAT3 <- matrix(seq(1,3),nrow=3)
+
+#My Functions 
 Function to  convert a file to Data Table 
 There is a problem while using fread function, found a solution in the internet
 	convertFileToDataTable <- function (fileName)
@@ -19,17 +21,16 @@ Function return True if a reqular expression regularExp in the column name featu
 otherwise returns False
 	myGrep <- function(regularExp)
 Create Matrix 
-createMatrix <- function(vList,numOfCat,labelList)
+	createMatrix <- function(vList,numOfCat,labelList)
 
-#constant values: Data URL and name of the directory after unzip the zip files 
+#Constant values: Data URL and name of the directory after unzip the zip files 
+URL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+zipDirName <- "UCI HAR Dataset"
+initDataSetName <- "InitDataSet.zip"
+harusDir <-"Human_Activity_Recognition_Using_Smartphones"
+harusOutFile <- "Human_Activity_Recognition_Using_Smartphones.txt"
 
-URL <-"https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-	zipDirName <- "UCI HAR Dataset"
-	initDataSetName <- "InitDataSet.zip"
-	harusDir <-"Human_Activity_Recognition_Using_Smartphones"
-	harusOutFile <- "Human_Activity_Recognition_Using_Smartphones.txt"
 
-This the value that need to be changed:
 #This is the line that needs to be changed to point to the user working area
 defaultWoringArea <- "C:/ramziPri/R_workarea/getting_and_cleaning_data/course_project"
 
