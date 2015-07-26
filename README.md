@@ -150,8 +150,7 @@ Classes ‘data.table’ and 'data.frame':	11880 obs. of  11 variables:
            Max.   :95.00   Max.   : 0.97451 
 		   
 #Code Book		   
-#Variable list and descriptions
-Variable name	Description
+Variable list and descriptions
 subject	ID	the subject who performed the activity for each window sample. Its range is from 1 to 30.
 activity	Activity name
 featDomain	Feature: Time domain signal or frequency domain signal (Time or Freq)
