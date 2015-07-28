@@ -1,4 +1,4 @@
-# Dillinger
+# NOTE: The CodeBook is found at the end of this file
 
 # How to run the scripts:
 set the variable defaultWoringArea <- <path_to_your_work_area>\
